@@ -1,0 +1,23 @@
+{
+  "name": "arena-battle/websocket-server",
+  "description": "Real-time multiplayer arena battle game WebSocket server",
+  "type": "project",
+  "require": {
+    "php": ">=8.0",
+    "ratchet/pawl": "^0.4",
+    "ratchet/rfc6455": "^1.4",
+    "ratchet/socket-io": "^0.3",
+    "react/socket": "^1.12"
+  },
+  "autoload": {
+    "psr-4": {
+      "ArenaBattle\\": "classes/"
+    }
+  },
+  "scripts": {
+    "start-server": "php game/websocket-server.php",
+    "install-db": "mysql -u root -p < database.sql"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
